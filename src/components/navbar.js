@@ -2,6 +2,7 @@
 import React, { useState } from 'react'
 import '../css/navbar.css'
 import Link from 'next/link'
+import NavLink from './navlink'
 
 
 const links = [
@@ -15,9 +16,11 @@ export default function NavBar() {
  
   return (
     <div className='navbar '>
+
+      {/*  Navegation  */}
       <div className='nav-link'>
       {links.map(link=>(
-            <Link key={link.title} href={link.url}>{link.title}</Link>
+            <NavLink link={link} key={link.title}/>
           ))}
       </div>
  
@@ -29,7 +32,8 @@ export default function NavBar() {
           <div className='menu-burguer'></div>
           <div className='menu-burguer'></div>
         </button>
-        {/* Menu list */}
+
+        {/* Menu list clic burguer*/}
 
         {open &&
           <div className='nav-burguer'>

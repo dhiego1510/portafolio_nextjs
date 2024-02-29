@@ -6,6 +6,10 @@
   justify-content: space-between; /* Distribuye los elementos hijos horizontalmente, con el primer elemento al principio y el último al final, con espacio uniformemente distribuido entre ellos */
   padding-left: 4px; /* Equivalente a px-4 en Tailwind CSS */
   padding-right: 4px; /* Equivalente a px-4 en Tailwind CSS */
+  font-size: 1.10rem;
+  line-height: 1.45rem; 
+  
+
 }
  
 @media (min-width: 640px) {
@@ -40,17 +44,22 @@
 .nav-link {
   display: flex;
   justify-content: space-around;
-  width: 100vh; 
+  width: 100vh;
+   
+  
   @media (max-width: 767px) { /* Up to medium screens */
     display: none;
   }
   
 }
-.nav-link a {
-  text-decoration: none;
-  color: black;
+  
+.active {
+  background-color: black;
+  color: white;
+   
+  border-radius: 5px;
+  padding: 3px;
 }
- 
 .container-burguer{
 @media (min-width: 768px) { 
   display: none; 
