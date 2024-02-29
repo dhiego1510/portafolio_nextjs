@@ -13,6 +13,7 @@ a {
   height: 100vh;
   background-image: linear-gradient(to bottom, #9a9adc, #111a3e);
   color: white;
+  overflow-y: scroll;
 }
 .container-navBar {
   height: 6rem;
