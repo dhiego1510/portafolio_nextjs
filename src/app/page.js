@@ -22,7 +22,8 @@ export default function Home() {
       <div className='button-container'>
         
         <a href="mailto:dhiego1510@gmail.com" className='button-contact'>Contactame</a>
-        <button className='button2'>Descarga Cv</button>
+         <a href='/cv.pdf' download={true} className='button2'>Descarga Cv</a> 
+        
         
       </div>
       
