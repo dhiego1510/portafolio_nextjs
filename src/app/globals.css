@@ -3,16 +3,17 @@
   padding: 0;
  
 }
-
+  
 a {
   color: black;
   text-decoration: none;
+  
 }
 .container{
   width: 100vw;
   height: 100vh;
-  background-image: linear-gradient(to bottom, #9a9adc, #111a3e);
-  color: white;
+  background-image: linear-gradient(to bottom, #7f7fba, #0e1532);
+  color: black;
   overflow-y: scroll;
 }
 .container-navBar {

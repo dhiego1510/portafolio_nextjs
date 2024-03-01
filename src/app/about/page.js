@@ -1,6 +1,8 @@
+"use client"
 import React from 'react'
 import '@/css/about.css'
 import Image from 'next/image'
+import Link from 'next/link'
 export default function AboutPage() {
 
   return (
@@ -10,11 +12,23 @@ export default function AboutPage() {
         {/* Biography */}
         <div className='biography'>
           <h1>Biography</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nihil officiis doloremque aspernatur voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nihil officiis doloremque aspernatur voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <p>¡Hola! Soy Diego, un desarrollador Full Stack con una fascinación por la creatividad y la innovación en el mundo del software y la tecnología. Soy músico hace mas de 10 años lo que ha influido significativamente en mi enfoque hacia el desarrollo, permitiéndome adoptar una perspectiva única y creativa en cada proyecto en el que trabajo.  
+          </p>  
+          <p>Estoy entusiasmado por la posibilidad de colaborar con equipos dinámicos y contribuir al desarrollo de proyectos que transformen el mundo digital y mejoren la experiencia de usuario. Si estás buscando un desarrollador Full Stack comprometido, creativo y orientado al éxito, ¡me encantaría ser parte de tu equipo y ayudarte a alcanzar tus objetivos!</p>
           <span>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Descubre el ritmo de la innovación.
           </span>
+          <div className='social' >
+      <Link href="https://github.com/dhiego1510" target="_blank">
+          <Image src="/github.png" alt="" width={28} height={26} />
+        </Link>
+        <Link href="https://www.linkedin.com/in/diego-arias-car/" target="_blank">
+          <Image src="/linkedin.png" alt="" width={28} height={26} />
+        </Link> 
+        <Link href="https://www.instagram.com/dhiego_1510/" target="_blank">
+          <Image src="/instagram.png" alt="" width={28} height={26} />
+        </Link>
+      </div>
           
           <div className='svg'>
           <svg
@@ -35,7 +49,7 @@ export default function AboutPage() {
                 strokeWidth="1"
               ></path>
             </svg>
-          <Image src="/foto.jpg" width={200} height={200}  className='image'/>
+          <Image src="/foto.jpg" width={200} height={200} alt='profile2'   className='image'/>
          
           </div>
             
@@ -58,6 +72,7 @@ export default function AboutPage() {
           <div className='skill'>PostgreSQL</div>
           <div className='skill'>Poo Java</div>
           <div className='skill'>Git</div>
+          <div className='skill'>GitHub</div>
         </div>
       </div>  
       {/* container skills */}

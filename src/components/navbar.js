@@ -4,6 +4,7 @@ import '../css/navbar.css'
 import Link from 'next/link'
 import NavLink from './navlink'
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 
 const links = [
   { url: "/", title: "Home" },
@@ -42,17 +43,20 @@ export default function NavBar() {
     },
   };
 
-
-
+  const handleCloseMenu = () => {
+    setOpen(false);
+  };
+   
   return (
     <div className='navbar '>
 
       {/*  Navegation  */}
       <div className='nav-link'>
         {links.map(link => (
-          <NavLink link={link} key={link.title} />
+          <NavLink link={link} key={link.title}  />
         ))}
       </div>
+      
 
       {/* Responsive menu */}
       <div className='container-burguer'>
@@ -60,19 +64,22 @@ export default function NavBar() {
         <button className='button-burguer' onClick={() => setOpen(!open)}>
           <motion.div 
           variants={topVariants} 
-          className='menu-burguer'>
+          className='menu-burguer'
+          animate={open ? "opened" : "closed"}
+          ></motion.div>
 
-          </motion.div>
           <motion.div 
           variants={centerVariants} 
-          className='menu-burguer'>
+          className='menu-burguer'
+          animate={open ? "opened" : "closed"}
+          ></motion.div>
 
-          </motion.div>
           <motion.div 
           variants={bottomVariants} 
-          className='menu-burguer'>
-            
-          </motion.div>
+          className='menu-burguer'
+          animate={open ? "opened" : "closed"}
+          ></motion.div>
+
         </button>
 
         {/* Menu list clic burguer*/}
@@ -80,11 +87,13 @@ export default function NavBar() {
         {open &&
           <div className='nav-burguer'>
             {links.map(link => (
-              <Link key={link.title} href={link.url}>{link.title}</Link>
+              <Link key={link.title}  href={link.url} onClick={handleCloseMenu}>{link.title} </Link> 
+              
             ))}
+            
           </div>
         }
-
+        
       </div>
     </div>
   )
