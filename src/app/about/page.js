@@ -66,11 +66,16 @@ export default function AboutPage() {
           <div className='skill'>Next.js</div>
           <div className='skill'>Node.js</div>
           <div className='skill'>Express.js</div>
-          <div className='skill'>CSS</div>
+          <div className='skill'>WebSocket</div>
+          <div className='skill'>Socket.IO</div>
           <div className='skill'>HTML</div>
+          <div className='skill'>CSS</div>
+          <div className='skill'>Tailwind CSS</div>
           <div className='skill'>MongoDB</div>
           <div className='skill'>PostgreSQL</div>
-          <div className='skill'>Poo Java</div>
+          <div className='skill'>Poo Java</div>   
+          <div className='skill'>GraphQL</div>   
+          <div className='skill'>Postman</div>   
           <div className='skill'>Git</div>
           <div className='skill'>GitHub</div>
         </div>

@@ -1,33 +1,42 @@
   "use client";
-   
-  import { motion, useScroll, useTransform } from "framer-motion";
+  
   import Image from "next/image";
   import Link from "next/link";
-  import { useRef } from "react";
-   
+ 
 
   const items = [
     {
+      id: 0,
+      title: "Chat en tiempo real",
+      desc: "App de chat en tiempo real que utiliza Socket.IO para la comunicación entre clientes y el servidor. Desarrollado con Node.js, Express y React con Vite.js para la interfaz, y estilizado con Tailwind CSS.",
+      img: "/chat.png",
+      link: "https://github.com/dhiego1510/Chat_Nodejs_Socketio",
+      skills: "Node.js, Express, Socket.IO, React, Tailwind CSS",
+    },
+    {
       id: 1,
       title: "App Info País",
-      desc: "aplicacion API REST. Utiliza MongoDB como base de datos para almacenar y gestionar los datos de manera eficiente y escalable",
+      desc: "Aplicacion API REST. Utiliza MongoDB como base de datos para almacenar y gestionar los datos de manera eficiente y escalable",
       img: "/countries.png",
       link: "https://github.com/JavierRuizArango/code_minds",
+      skills: "Next.js, React, Node.js, Express, MongoDB, GraphQL ",
     },
     {
       id: 2,
-      title: "Next.js Medium  ",
+      title: "Tarjeta con React",
       desc: "Ésta es mi tarjeta de presentación personal, una página web sencilla que incluye mi foto, información personal y enlaces a mis redes sociales. ",
       img: "/card-bussines.png",
       link: "https://dhiego1510.github.io/project-business-card/",
+      skills: "Vite.js, React ",
     },
      
     {
       id: 3,
       title: "Todo-List ",
-      desc: "To-Do list es una aplicación web que te permite crear una lista de tareas,añadir por categoría y marcarlas como completadas",
+      desc: "To-Do list es una aplicación web que te permite crear una lista de tareas,añadir por categoría y marcarlas como completadas.",
       img: "/todo-list.png",
       link: "https://to-do-list-reto-final.vercel.app/",
+      skills: "Html, Css, Javascript",
     },
      
     
@@ -56,6 +65,18 @@
                   </div>
                   <div>
                   <p>{item.desc}</p>
+                   
+
+                    <div className="skills-container">
+
+                      {item.skills.split(", ").map((skill, index) => (
+                      <div className="skills" key={index}>
+                        {skill}
+                      </div>
+                       ))}
+
+                    </div>
+
                   </div>
 
                   

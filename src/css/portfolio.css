@@ -26,6 +26,7 @@
 
   .item-container {
     width: 300px;  
+    
     margin-bottom: 2rem;  
   }
 
@@ -33,7 +34,7 @@
     padding: 1.5rem;  
     background-color: #909ea1;  
     border-radius: 8px;  
-    
+    height: 570px;
     @media screen and (max-width: 768px) {
       padding: 0.8rem;
     }
@@ -41,6 +42,25 @@
   .item p {
     padding: 0.5rem;
   }
+  .skills-container {
+    
+    display: inline-block;
+  
+   
+  }
+  .skills {
+    display: inline-block;
+  padding: 5px 10px;
+  margin-right: 5px; /* Espacio entre las habilidades */
+  margin-top: 5px;
+  border: 1px solid black;
+  border-radius: 4px;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  }
+
+
   .title-work {
     font-size: 1.5rem;  
     max-width: 100%;  
