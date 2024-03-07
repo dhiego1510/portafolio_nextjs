@@ -11,7 +11,7 @@ export default function AboutPage() {
       <div className='container-content'>
         {/* Biography */}
         <div className='biography'>
-          <h1>Biography</h1>
+          <h1>Biografia</h1>
           <p>¡Hola! Soy Diego, un desarrollador Full Stack con una fascinación por la creatividad y la innovación en el mundo del software y la tecnología. Soy músico hace mas de 10 años lo que ha influido significativamente en mi enfoque hacia el desarrollo, permitiéndome adoptar una perspectiva única y creativa en cada proyecto en el que trabajo.  
           </p>  
           <p>Estoy entusiasmado por la posibilidad de colaborar con equipos dinámicos y contribuir al desarrollo de proyectos que transformen el mundo digital y mejoren la experiencia de usuario. Si estás buscando un desarrollador Full Stack comprometido, creativo y orientado al éxito, ¡me encantaría ser parte de tu equipo y ayudarte a alcanzar tus objetivos!</p>

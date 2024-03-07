@@ -48,7 +48,7 @@
       <div className="container-portfolio">
         
          
-          <div className="title">My Works</div>
+          <div className="title">Mis Trabajos</div>
           <div className="container-works">
             {items.map(item => (
               
