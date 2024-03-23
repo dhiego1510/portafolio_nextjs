@@ -38,8 +38,15 @@
       link: "https://to-do-list-reto-final.vercel.app/",
       skills: "Html, Css, Javascript",
     },
+    {
+      id: 4,
+      title: "Barberia website ",
+      desc: "Barberia website es una página web sencilla con html y css puro, que incluye sección home, una sección de productos, un formulario de contacto.",
+      img: "/barber.png",
+      link: "https://barbershop-website-three.vercel.app/",
+      skills: "Html, Css",
+    },
      
-    
   ];
 
   const PortfolioPage = () => {
