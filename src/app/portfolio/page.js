@@ -26,7 +26,7 @@
       title: "Follow Card Twitter",
       desc: "Este proyecto es un clon de tarjetas de seguimiento de Twitter, donde se muestran usuarios con la opción de seguirlos o dejar de seguirlos. Cada tarjeta incluye el nombre, nombre de usuario y su avatar obtenido de la API de Unavatar.",
       img: "/card.png",
-      link: "https://twitter-follow-card-tan.vercel.app/",
+      link: "https://github.com/dhiego1510/twitter-follow-card/tree/master",
       skills: "React, Vite.js, CSS ",
     },
     {
