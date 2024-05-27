@@ -6,6 +6,14 @@
 
   const items = [
     {
+      id: 6,
+      title: "Java Poo Citas Médicas",
+      desc: " Este proyecto implementa un sistema de gestión de citas médicas para hospitales, permitiendo a doctores, pacientes y enfermeras gestionar sus citas disponibles y programadas de manera efectiva.",
+      img: "/javaPoo.png",
+      link: "https://github.com/dhiego1510/Medical-appointments-Java",
+      skills: "Java, Intellij IDEA",
+    },
+    {
       id: 0,
       title: "Chat en tiempo real",
       desc: "App de chat en tiempo real que utiliza Socket.IO para la comunicación entre clientes y el servidor. Desarrollado con Node.js, Express y React con Vite.js para la interfaz, y estilizado con Tailwind CSS.",
